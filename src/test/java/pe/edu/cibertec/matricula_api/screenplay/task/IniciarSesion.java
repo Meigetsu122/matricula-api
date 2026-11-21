@@ -37,6 +37,7 @@ public class IniciarSesion implements Task {
             actor.remember("accessToken", respuesta.jsonPath().getString("accessToken"));
             actor.remember("refreshToken", refresh);
             actor.remember("refreshOriginal", refresh);
+            actor.remember("usuario", usuario);
         }
     }
 
